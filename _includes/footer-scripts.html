@@ -3,25 +3,28 @@
 <script type="text/javascript">
 "use strict";
 
-document.getElementById('tuitionTime').addEventListener('submit', printFinAid);
+document.getElementById('tuitionTime').addEventListener('submit', getTotal);
 
-function printFinAid(event) {
-  var aidAmount = 0;
-  event.preventDefault();
-  aidAmount = parseInt(document.getElementById('txt-financial-aid').value, 10 ) || 0;
-  console.log(aidAmount);
-  document.getElementById('txt-compute').value = aidAmount;
-}
-
-// function getTotal(event) {
+// function printFinAid(event) {
 //   event.preventDefault();
-
-//   var finAid = parseInt(document.getElementById('txt-financial-aid').value, 10) || 0;
-
-//   console.log('finAid');
-
-//   document.getElementById('txt-compute').value = finAid;
+//   var aidAmount = 0;
+//   aidAmount = parseInt(document.getElementById('txt-financial-aid').value, 10 ) || 0;
+//   console.log(aidAmount);
+//   document.getElementById('txt-compute').value = aidAmount;
 // }
+
+function getTotal(event) {
+  event.preventDefault();
+
+  var finAid = 0;
+  var finAid = parseInt(document.getElementById('txt-financial-aid').value, 10) || 0;
+
+  console.log(finAid);
+
+  var fullTime = 24400;
+  var total = fullTime - finAid;
+  document.getElementById('txt-compute').value = total;
+}
 
 // function computeShit(event) {
 //   event.preventDefault();
