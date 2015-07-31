@@ -1,15 +1,14 @@
 ---
 layout: default
 ---
+<html>
+
 
 <div class="home">
 
   <h1 class="page-heading">Posts</h1>
 
-
-  <p>Helloooo</p>
-
-  <a href="/signup" class="button" onclick="ga('send', 'event', 'homepage', 'signup button click');">Signup now</a>
+  <!-- <a href="/signup" class="button" onclick="ga('send', 'event', 'homepage', 'signup button click');">Signup now</a> -->
 
 <!--   <ul class="post-list">
     {% for post in site.posts %}
@@ -23,6 +22,53 @@ layout: default
     {% endfor %}
   </ul> -->
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<!--   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+
+
+  <form class="form" id="tuitionTime">
+<!--     <div class="tuition plan">
+      <label for="r-tuition-plan">Tuition Plan:</label><br>
+      <input type="radio" value="fullTime" name="tuition-method" id="r-tuition-plan" checked> <label for="r-tuition-plan">Full Time</label><br>
+      <input type="radio" value="partTime" name="r_method" id="r-tuition-plan"> <label for="r-tuition-plan">Part Time</label><br><br>
+    </div> -->
+
+    <div class="dorm plan">
+      <label for="r-dorm-plan">Dorm Plan:</label><br>
+      <input type="radio" value="single" name="dorm-type" id="r-dorm-plan"> <label for="r-dorm-plan">Single Room</label>
+      <input type="radio" value="double" name="dorm-type" id="r-dorm-plan"> <label for="r-dorm-plan">Double Room</label>
+      <input type="radio" value="triple" name="dorm-type" id="r-dorm-plan"> <label for="r-dorm-plan">Triple Room</label>
+      <input type="radio" value="apt-quad" name="dorm-type" id="r-dorm-plan"> <label for="r-dorm-plan">Apartment Quad/Studio</label><br>
+      <br>
+    </div>
+
+    <div class="meal plan">
+      <label for="r-meal-plan">Weekly Meal Plan:</label><br>
+      <input type="radio" value="16mpw" name="meal-type" id="r-meal-plan"> <label for="r-meal-plan">16 Meals</label>
+      <input type="radio" value="14mpw" name="meal-type" id="r-meal-plan"> <label for="r-meal-plan">14 Meals</label>
+      <input type="radio" value="12mpw" name="meal-type" id="r-meal-plan"> <label for="r-meal-plan">12 Meals</label>
+      <input type="radio" value="8mpw" name="meal-type" id="r-meal-plan"> <label for="r-meal-plan">8 Meals</label>
+      <br><br>
+    </div>
+
+    <div class="financial aid">
+      <label for="txt-financial-aid">Scholarships and Financial Aid:</label>
+      <input type="text" id="txt-financial-aid" placeholder="0">
+    </div>
+
+    <div class="compute">
+      <p>
+      <label for="btn-compute">Total Cost</label>
+      <input type="submit" value="Go" id="btn-compute">
+      <input type="text" id="txt-compute" placeholder="$0.00">
+      </p>
+
+      <div id="results"></div>
+    </div>
+
+  </form>
 
 </div>
+
+
+
+</html>

@@ -1,5 +1,47 @@
 <!-- Google Analytics -->
 
+<script type="text/javascript">
+"use strict";
+
+document.getElementById('tuitionTime').addEventListener('submit', printFinAid);
+
+function printFinAid(event) {
+  var aidAmount = 0;
+  event.preventDefault();
+  aidAmount = parseInt(document.getElementById('txt-financial-aid').value, 10 ) || 0;
+  console.log(aidAmount);
+  document.getElementById('txt-compute').value = aidAmount;
+}
+
+// function getTotal(event) {
+//   event.preventDefault();
+
+//   var finAid = parseInt(document.getElementById('txt-financial-aid').value, 10) || 0;
+
+//   console.log('finAid');
+
+//   document.getElementById('txt-compute').value = finAid;
+// }
+
+// function computeShit(event) {
+//   event.preventDefault();
+
+//   var dorm = document.getElementById('tuitionTime').dorm-type,
+//     dormType;
+
+//   for (var i=0; i < dorm.length; i++) {
+//     if (dorm[i].checked == true) {
+//       dormType = dorm[i].value;
+//     }
+//   }
+
+//   var dormCost = 0;
+//   switch (dormType)
+
+// }
+
+</script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -9,4 +51,6 @@
   ga('create', 'UA-65731715-1', 'auto');
   ga('send', 'pageview');
 
+
 </script>
+
