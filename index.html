@@ -1,20 +1,43 @@
 <!DOCTYPE html>
-<header>
+<head>
 <title>Andrew Atwong</title>
-</header>
+</head>
 
+<!-- <link rel="stylesheet" href="style.css" type="text/css"> -->
+<link rel="stylesheet" href="css/skeleton.css" type="text/css">
+<link rel="stylesheet" href="css/normalize.css" type="text/css">
 <script src="script.js"></script>
+
 
 <html lang="en">
   <body>
-    <p>
+    <div class="container">
+      <p>
+        <script> Greet(); </script>, you have reached the personal website of
+        Andrew Atwong. If you would like to find out more about me, please visit
+        my <a href="https://www.linkedin.com/in/andrewatwong">LinkedIn</a> profile,
+        or if you're from Accenture, my
+        <a href = "https://people.accenture.com/experience.aspx?accountname=andrew.atwong">
+          people page</a>.
+      </p>
+      <p>
+        <!-- Anonymous feedback: -->
+        Domine salvam fac patrium nostrum Americam et exaudi nos in diequa invocaverimuste.
+      </p>
 
-    <script> Greet(); </script>, you have reached the personal website of Andrew Atwong <br>
-      Thanks for visiting!
+      <form method="post" action="">
+        Please write anything you that feel would be remotely helpful or interesting to me: <br>
+        <textarea class="columns" id="messageBox" name="anonMessage" maxentry="1000"></textarea>
+      </form>
 
-    </p>
+      <form enctype="text/plain" method="get" action="mailto:andrewpa601@gmail.com">
+Your First Name: <input type="text" name="first_name"><br>
+Your Last Name: <input type="text" name="last_name"><br>
+Comments: <textarea rows="5" cols="30" name="comments"></textarea>
+<input type="submit" value="Send">
+</form>
 
-
+    </div>
   </body>
 
 

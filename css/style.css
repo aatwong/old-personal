@@ -1,0 +1,39 @@
+
+body {
+  background-color: White;
+  padding: 2em;
+  font-family: sans-serif;
+  font-size:larger;
+}
+
+p {
+
+}
+
+form {
+  /*padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;*/
+}
+
+/*.submissionfield { width: 90vw; height: 20vw; border: 1px solid #999999; padding: 5px; }*/
+
+/* see this for centering: http://www.smalltime.com/anon.html*/
+textarea {
+  -webkit-appearance: textarea;
+  background-color: white;
+  -webkit-rtl-ordering: logical;
+  -webkit-user-select: text;
+  flex-direction: column;
+  resize: auto;
+  cursor: auto;
+
+  word-wrap: break-word;
+  border-width: 1px;
+  border-style: solid;
+  border-color: initial;
+  border-image: initial;
+  padding: 4px;
+
+}
