@@ -1,4 +1,4 @@
-
+//<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 //Returns the appropriate greeting based on time of day
 function Greet() {
@@ -15,3 +15,19 @@ function Greet() {
   }
   document.write(greeting);
 }
+
+
+
+  // $('#sendMessageButton').on('click', function() {
+  //     alert("clicked");
+  // });
+
+// document.getElementById('sendMessageButton').onclick = function(){
+//   alert("yo");
+// }
+
+
+// function sendMessage() {
+//   var sent = document.getElementById('sendMessageButton');
+//   console.log(sent);
+// }

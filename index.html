@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <head>
-<title>Andrew Atwong</title>
+  <meta charset="utf-8" />
+  <title>Andrew Atwong</title>
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <!-- <link rel="stylesheet" href="style.css" type="text/css"> -->
-<link rel="stylesheet" href="css/skeleton.css" type="text/css">
-<link rel="stylesheet" href="css/normalize.css" type="text/css">
-<script src="script.js"></script>
+<!-- <link rel="stylesheet" href="css/skeleton.css" type="text/css">
+<link rel="stylesheet" href="css/normalize.css" type="text/css"> -->
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="sendMessage.js"></script>
+<script src="bootstrap.js"></script>
 
 <html lang="en">
   <body>
@@ -18,16 +26,69 @@
         my <a href="https://www.linkedin.com/in/andrewatwong">LinkedIn</a> profile,
         or if you're from Accenture, my
         <a href = "https://people.accenture.com/experience.aspx?accountname=andrew.atwong">
-          people page</a>.
+          People Page</a>.
       </p>
-      <!-- <p>
-        Domine salvam fac patrium nostrum Americam et exaudi nos in diequa invocaverimuste.
-      </p> -->
+      <p>
+        This website exists because I want to hear from you. If I have been a
+        great friend or role model, or you feel I'm deserving of a complment,
+        please let me know&mdash;it will probably make my day! But I want to know
+        how I can get better. I want to know where I have failed or fallen
+        short in any aspect of my life that you are aware of, no matter how
+        inconsequential or obvious it may seem.
+        Since candid personal feedback seems so hard to come by, this
+        is my attempt at breaking through the social or cultural boundaries
+        that may prevent you from communicating with me freely.
+        I truly believe that feedback&mdash;no matter how brutal, belated, or
+        subjective&mdash;is the most elusive gift anyone can receive.
+      </p>
+      <p>
+        Of course, I would rather live in a world where anyone could give me
+        feedback, at any time, so if you are comfortable doing that, please
+        do, and do so often. But I've left a simple textbox for you to
+        write an anonymous message if you feel that isn't appropriate or
+        convenient. I will have no way to respond to you, so all I can do
+        is thank you, in advance, for helping me to become a better person.
+      </p>
+
+
 
       <!-- <form method="post" action="">
         Please write anything you that feel would be remotely helpful or interesting to me: <br>
         <textarea class="columns" id="messageBox" name="anonMessage" maxentry="1000"></textarea>
       </form> -->
+      <form class="container anonymous-message">
+        <label for="anonMessage">Anonymous Message</label>
+        <textarea class="u-full-width" placeholder="Hi Andrew . . ." id="anonMessage"></textarea>
+        <label class="spam-check">
+          <input type="checkbox">
+          <span class="label-body">I'm not a robot</span> PLACEHOLDER for ReCAPTCHA
+        </label>
+        <!-- <div class="g-recaptcha" data-sitekey="6LcTxSgTAAAAAJ6tn89Uw9XWYaLJJMyo88I7wifg"></div> -->
+        <button id="sendMessageButton" class="button-primary" type="submit">Send</button>
+      </form>
+
+
+        <!-- <div id="wufoo-zwvdm9a1eptv04">
+  Fill out my <a href="https://aatwong.wufoo.com/forms/zwvdm9a1eptv04">online form</a>.
+  </div>
+  <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Use <a href="http://www.wufoo.com/gallery/templates/">Wufoo templates</a> to make your own HTML forms.</div>
+  <script type="text/javascript">var zwvdm9a1eptv04;(function(d, t) {
+  var s = d.createElement(t), options = {
+  'userName':'aatwong',
+  'formHash':'zwvdm9a1eptv04',
+  'autoResize':true,
+  'height':'377',
+  'async':true,
+  'host':'wufoo.com',
+  'header':'show',
+  'ssl':true};
+  s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+  s.onload = s.onreadystatechange = function() {
+  var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+  try { zwvdm9a1eptv04 = new WufooForm();zwvdm9a1eptv04.initialize(options);zwvdm9a1eptv04.display(); } catch (e) {}};
+  var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+  })(document, 'script');</script> -->
+
 
 
     </div>
