@@ -10,8 +10,7 @@
 <!-- <link rel="stylesheet" href="style.css" type="text/css"> -->
 <link rel="stylesheet" href="css/skeleton.css" type="text/css">
 <link rel="stylesheet" href="css/normalize.css" type="text/css">
-<!-- <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css"> -->
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
@@ -58,11 +57,12 @@
         <textarea class="columns" id="messageBox" name="anonMessage" maxentry="1000"></textarea>
       </form> -->
       <form class="container anonymous-message">
-        <label for="anonMessage">Anonymous Message</label>
+        <label for="anonMessage">Leave an Anonymous Message</label>
         <textarea class="u-full-width" placeholder="Hi Andrew . . ." id="anonMessage"></textarea>
         <label class="spam-check">
-          <input type="checkbox">
-          <span class="label-body">I'm not a robot</span> PLACEHOLDER for ReCAPTCHA
+          <input type="checkbox" id="spamCheck">
+          <!-- PLACEHOLDER for ReCAPTCHA -->
+          <span class="label-body">I'm not a robot</span>
         </label>
         <!-- <div class="g-recaptcha" data-sitekey="6LcTxSgTAAAAAJ6tn89Uw9XWYaLJJMyo88I7wifg"></div> -->
         <button id="sendMessageButton" class="button-primary" type="submit">Send</button>

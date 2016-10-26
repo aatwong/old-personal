@@ -15,19 +15,3 @@ function Greet() {
   }
   document.write(greeting);
 }
-
-
-
-  // $('#sendMessageButton').on('click', function() {
-  //     alert("clicked");
-  // });
-
-// document.getElementById('sendMessageButton').onclick = function(){
-//   alert("yo");
-// }
-
-
-// function sendMessage() {
-//   var sent = document.getElementById('sendMessageButton');
-//   console.log(sent);
-// }
