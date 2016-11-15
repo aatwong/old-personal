@@ -10,10 +10,10 @@ $(document).ready(function() {
 
     }
     else if ($('#anonMessage').val() == ""){ //Improve this check to include spaces; non-messages
-      alert('Please enter a message.')
+      alert('Please write a message.')
     }
     else {
-      alert('Please assert that you are not a robot');
+      alert('Please assert your candor.');
     };
   });
 });
